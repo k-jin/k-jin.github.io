@@ -11,67 +11,40 @@
 
     <title>Kevin Jin</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+<!--     <link href="css/stylish-portfolio.css" rel="stylesheet">
+ -->
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <div class="circle-portrait" style="background-image:url(img/headshot.JPG);"></div>
-            <br>
-            <h1>Kevin Jin</h1>
-            <h3>Student of code, life, and the pursuit of happiness</h3>
-            <h3>Passion for software and mobile development</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg"><i class="fa fa-chevron-down fa-3x yellow"></i></a>
+<header>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="page-title">Kevin Jin</a>
+            </div>
         </div>
-    </header>
-
+    </nav>
+    <div class="container"></div>
+    <ul id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
+        <li class="logo">
+            <img class="responsive-img" src="img/headshot.jpg" />
+        </li>
+        <li>Welcome</li>
+        <li>About Me</li>
+        <li>Projects</li>
+        <li>Experience</li>
+    </ul>
+</header>
+<main>
+<div class="container">
     <!-- Aboutmeow  -->
     <section id="about" class="about">
         <div class="container">
@@ -199,7 +172,7 @@
                                 </a>
                                 <hr class="small">
                                 <div class="text-left">
-                                <p class="lead">Over the summer of 2014, I worked as a research and coding assistant in the Computational Thinking in STEM (CT-STEM) research group at Northwestern University. The goal of the research group was to develop curriculum that challenged high school students to develop programming and coding skills, while learning to think more computationally. 
+                                <p class="lead">Over the summer of 2014, I worked as a research and coding assistant in the Computational Thinking in STEM (CT-STEM) research group at Northwestern University. The goal of the research group was to develop curriculum that challenged high school students to develop programming and coding skills, while learning to think more computationally.</p> 
                                 <p class="lead">As a coding assistant, I created my own model of the spread of vector-borne diseases in NetLogo, an agent-based modeling language. I also maintained existing models, tailoring them to the specific needs of certain programs as well as debugging models. I helped develop curriculum in the block-based programming language Blockly.</p>
                                 <p class="lead">As a research assistant, I helped assess and analyze assessment results from the school test sites. I also contributed to the creation and refinement of the assessments that tracked student progress throughout the school year.</p>
 
@@ -277,7 +250,8 @@
             </div>
         </div>
     </aside>
-
+    </div>
+</main>
 
     <!-- Footer -->
     <footer>
