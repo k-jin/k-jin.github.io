@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- TODO:
+    -sticky footer
 
+-->
 <head>
 
     <meta charset="utf-8">
@@ -10,114 +13,137 @@
     <meta name="author" content="">
 
     <title>Kevin Jin</title>
-    <link href="img/favicon_large.png" rel="icon">
-    <link href="css/materialize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon_large.png">
+    <link rel="stylesheet" href="css/pure.css">
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Custom CSS -->
 <!--     <link href="css/stylish-portfolio.css" rel="stylesheet">
  -->
     <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
-    <header>
-        <div id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
-            <img class="responsive-img" src="img/headshot.jpg" />
-            <div class="collection">
-                <a class="collection-item active">Welcome</a>
-                <a class="collection-item">About Me</a>
-                <a class="collection-item">Experience</a>
-                <a class="collection-item">Projects</a>
-            </div>
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu">
+            <img class="pure-img-responsive" src="img/headshot.jpg">
+            <a class="pure-menu-heading" id="nav-head" href="#">Kevin</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Welcome</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Me</a></li>
+
+                <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+                    <a href="#" class="pure-menu-link">Experience</a>
+                </li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Projects</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact Me</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
     <main>
-        
-        <div class="section indigo darken-1" id="top-bar">
-            <div class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="s12 m12">
-                            <h1 class="header center-on-small-only indigo-text text-lighten-4">Kevin Jin</h1>
-                        </div>
+    <div id="main">
+        <div id="welcome">
+            <div class="header">
+                <h1>Welcome!</h1>
+                <h2>Thank you for visiting my site</h2>
+            </div>
+
+            <div class="content">
+                <h1 class="content-subhead">About Me</h1>
+                <p>
+                    My name is Kevin and I am a senior studying Computer Science at Northwestern University. I'm interested in backend and full stack engineering but more importantly, I am looking for opportunities that challenge me and reflect my values.  
+                </p>
+                <h2 class="content-subhead">My Values</h2>
+                <ul>
+                    <li><b>Be curious</b>: you never know what's at the end of the rabbit hole</li>
+                    <li><b>Keep growing</b>: whether it's intellectually, physically, or spiritually, I want to constantly be better, by gaining new experiences and refining existing skills</li>
+                    <li><b>Take pride</b>: always be able to say "I did that and I put my best effort into it"</li>
+                    <li><b>Build bridges</b>: life is not a solitary journey, we are here to share our experiences</li>
+                    <li><b>Do good</b>: have a positive impact amongst my peers, my community, and the world</li>
+                </ul>
+                <h2 class="content-subhead">Technical Skills</h2>
+                <h4 class="content-subhead">Programmming Languages</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Golang</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>C++</li>
+                </ul>
+                <h4 class="content-subhead">Relevant Skills</h4>
+                <ul>
+                    <li>Git</li>
+                    <li>Linux (Ubuntu, Red Hat)</li>
+                    <li>Agile Development</li>
+                    <li>SQL (Postgres/Redshift, MySQL)</li>
+                </ul>
+                <h4 class="content-subhead">Relevant Coursework</h4>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Computer Systems and Databases</li>
+                    <li>Software Development and Project Management</li>
+                    <li>Networking, Network Penetration, and Distributed Systems</li>
+                    <li>Intro to AI, Knowledge Representation and Reasoning, and Machine learning</li>
+                    <li>Human Computer Interactions and Biometrics</li>
+                </ul>
+                <p>
+                    When I'm not coding, I love to be outdoors. I grew up in Seattle, where I was lucky enough to have hiking and skiing right in my backyard. Otherwise, I like to play pickup basketball, soccer, and volleyball whenever I get the chance. When the weather is not so stellar, I like to play video games such as FIFA or Super Smash Bros, or cheer on my favorite Seattle and Northwestern sports teams.
+                </p>
+
+                <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <div class="pure-g">
+                    <div class="pure-u-1-4">
+                        <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                    </div>
+                    <div class="pure-u-1-4">
+                        <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                    </div>
+                    <div class="pure-u-1-4">
+                        <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                    </div>
+                    <div class="pure-u-1-4">
+                        <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
                     </div>
                 </div>
+
+                <h2 class="content-subhead">Try Resizing your Browser</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
         </div>
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col s2">Hi</div>
-                    <div class="col s10">
-                        <div id="about_me" class="">
-                                Welcome to my website and thanks for taking the time to visit!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </main>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-              <div class="col l1 m3"></div>
-              <div class="col l5 s12 indigo">
-                <h5 class="white-text">Kevin Jin</h5>
-                <p class="grey-text text-lighten-4">2039 Sherman Ave<br />
-                Evanston, IL 60201</p>
-                <p class="grey-text text-lighten-4"><i class="fa fa-phone fa-fw"></i> (206) 397-9068 <br />
-                <i class="fa fa-envelope-o fa-fw"></i> <a class="grey-text text-lighten-4" href="mailto:kevin@kevin-jin.com">kevin@kevin-jin.com</a></p>
+    <footer>
+        <h5 class="white-text">Kevin Jin</h5>
+        <p>2039 Sherman Ave<br />
+        Evanston, IL 60201</p>
+        <p><i class="fa fa-phone fa-fw"></i> (206) 397-9068 <br />
+        <i class="fa fa-envelope-o fa-fw"></i> <a   href="mailto:kevin@kevin-jin.com">kevin@kevin-jin.com</a></p>
 
-              </div>
-              <div class="col l4 offset-l2 s12 indigo">
-                <h5 class="white-text">Links</h5>
-                    <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
-                    <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-github-square fa-fw fa-3x"></i></a>
-                    <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x"></i></a>
-                    <a href="KevinJin_Resume.pdf" title="Resume"><i class="fa fa-file-text fa-fw fa-3x"></i></div></a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
+
+        <h5 class="white-text">Links</h5>
+            <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+            <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-github-square fa-fw fa-3x"></i></a>
+            <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x"></i></a>
+            <a href="KevinJin_Resume.pdf" title="Resume"><i class="fa fa-file-text fa-fw fa-3x"></i></div></a>
     </footer>
-    <!-- <header class="">
-    <nav class="top-nav">
-        <div class="nav-wrapper col s3">
-            <a class="page-title">Kevin Jin</a>
-        </div>
-    </nav>
-        <ul id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
-            <li class="logo">
-                    <img class="responsive-img" src="img/headshot.jpg" />
-            </li>
-            <div class="container">
-                <li>Welcome</li>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Experience</li>
-            </div>
-        </ul>
-    </header>
-    <main class="row">
 
-        <div class="container" style="visibility:;">
-            <section id="about-me" class="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 text-left">
-                            <h2>Hi there!</h2>
-                            <p class="lead">Thanks for visiting. My name is Kevin and I am a junior studying Computer Science at Northwestern University. I enjoy building and learning and am always looking for opportunities to do so.</p>
+</div>
+    
+    <!-- <header class="">
+
                             <h3>Languages</h3>
                             <ul class="lead">
                                 <li>Java</li>
@@ -128,7 +154,7 @@
                                 <li>Javascript</li>
                                 <li>HTML/CSS</li>
                             </ul>
-                            <p class="lead">When I'm not coding, I love to be outdoors and active. I grew up in Seattle, where I was lucky enough to have hiking and skiing right in my backyard. Otherwise, I like to play pickup basketball, soccer, and volleyball whenever I get the chance. When the weather is not so stellar, I like to play video games such as FIFA or Super Smash Bros, or cheer on my favorite Seattle and Northwestern sports teams.</p>
+                            <p class="lead"></p>
                         </div>
                     </div>
                 </div>
@@ -208,6 +234,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/layout.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

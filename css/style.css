@@ -8,6 +8,17 @@ body {
    flex-direction: column;
 }
 
-main {
-   flex: 1 0 auto;
+#main {
+   flex: 1;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #e6e6e6;
+}
+
+#nav-head {
+	color: orange;
+	background-color: black;
 }
