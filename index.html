@@ -10,13 +10,15 @@
     <meta name="author" content="">
 
     <title>Kevin Jin</title>
-
-    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="img/favicon_large.png" rel="icon">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom CSS -->
 <!--     <link href="css/stylish-portfolio.css" rel="stylesheet">
  -->
     <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
@@ -24,271 +26,159 @@
 </head>
 
 <body>
-<header>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a class="page-title">Kevin Jin</a>
+    <header>
+        <ul id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
+            <li class="logo">
+                    <img class="responsive-img" src="img/headshot.jpg" />
+            </li>
+            <div class="container">
+                <li>Welcome</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Experience</li>
             </div>
+        </ul>
+    </header>
+    <main>
+        
+        <div class="section indigo darken-1" id="top-bar">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="s12 m12">
+                            <h1 class="header center-on-small-only indigo-text text-lighten-4">Kevin Jin</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col s2">Hi</div>
+                    <div class="col s10">
+                        <div id="about_me" class="">
+                                Welcome to my website and thanks for taking the time to visit!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <header class="">
+    <nav class="top-nav">
+        <div class="nav-wrapper col s3">
+            <a class="page-title">Kevin Jin</a>
         </div>
     </nav>
-    <div class="container"></div>
-    <ul id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
-        <li class="logo">
-            <img class="responsive-img" src="img/headshot.jpg" />
-        </li>
-        <li>Welcome</li>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Experience</li>
-    </ul>
-</header>
-<main>
-<div class="container">
-    <!-- Aboutmeow  -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-left">
-                    <h2>Hi there!</h2>
-                    <p class="lead">Thanks for visiting. My name is Kevin and I am a junior studying Computer Science at Northwestern University. I enjoy building and learning and am always looking for opportunities to do so.</p>
-                    <h3>Languages</h3>
-                    <ul class="lead">
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>C++</li>
-                        <li>NetLogo</li>
-                        <li>Javascript</li>
-                        <li>HTML/CSS</li>
-                    </ul>
-                    <p class="lead">When I'm not coding, I love to be outdoors and active. I grew up in Seattle, where I was lucky enough to have hiking and skiing right in my backyard. Otherwise, I like to play pickup basketball, soccer, and volleyball whenever I get the chance. When the weather is not so stellar, I like to play video games such as FIFA or Super Smash Bros, or cheer on my favorite Seattle and Northwestern sports teams.</p>
-                </div>
+        <ul id="nav-mobile" class="side-nav fixed" style="overflow:auto; transform:translateX(0%);">
+            <li class="logo">
+                    <img class="responsive-img" src="img/headshot.jpg" />
+            </li>
+            <div class="container">
+                <li>Welcome</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Experience</li>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-    
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ 
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
+        </ul>
+    </header>
+    <main class="row">
+
+        <div class="container" style="visibility:;">
+            <section id="about-me" class="about">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-crosshairs fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                        <div class="col s12 text-left">
+                            <h2>Hi there!</h2>
+                            <p class="lead">Thanks for visiting. My name is Kevin and I am a junior studying Computer Science at Northwestern University. I enjoy building and learning and am always looking for opportunities to do so.</p>
+                            <h3>Languages</h3>
+                            <ul class="lead">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>C++</li>
+                                <li>NetLogo</li>
+                                <li>Javascript</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                            <p class="lead">When I'm not coding, I love to be outdoors and active. I grew up in Seattle, where I was lucky enough to have hiking and skiing right in my backyard. Otherwise, I like to play pickup basketball, soccer, and volleyball whenever I get the chance. When the weather is not so stellar, I like to play video games such as FIFA or Super Smash Bros, or cheer on my favorite Seattle and Northwestern sports teams.</p>
                         </div>
                     </div>
-                    <!-- /.row (nested) 
                 </div>
-                <!-- /.col-lg-10 
-            </div>
-            <!-- /.row 
-        </div>
-        <!-- /.container 
-    </section>
--->
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Work Experience</h1>
-        </div>
-    </aside>
+            </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+            <section id="work" class="portfolio">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="portfolio-item">
-                                <a href="http://www.physiq.com">
-                                    <img class="img-portfolio img-responsive" src="img/physiq.png">
-                                </a>
-                                <hr class="small">
-                                <div class="text-left">
-                                <p class="lead">Over this past summer (2015), I worked with the physiological startup PhysIQ as a Software Development Intern. The first project I worked on was learning how to use the Java SDK to interact with the RESTful API. The objective of this project was to clean up the existing documentation and to write a user guide from a brand new user's perspective. In the process, I was also able to help find some bugs in the API.</p>
-                                <p class="lead">I'm currently facilitating a unit testing transition to behaviorial-driven testing, using Cucumber. There are many SDKs that interact with the API and there are over a thousand unit tests, using Cucumber allows us to consolidate feature files that are both human and machine readable.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="portfolio-item">
-                                <a href="http://ct-stem.northwestern.edu/">
-                                    <img class="img-portfolio img-responsive" src="img/nu.png">
-                                </a>
-                                <hr class="small">
-                                <div class="text-left">
-                                <p class="lead">Over the summer of 2014, I worked as a research and coding assistant in the Computational Thinking in STEM (CT-STEM) research group at Northwestern University. The goal of the research group was to develop curriculum that challenged high school students to develop programming and coding skills, while learning to think more computationally.</p> 
-                                <p class="lead">As a coding assistant, I created my own model of the spread of vector-borne diseases in NetLogo, an agent-based modeling language. I also maintained existing models, tailoring them to the specific needs of certain programs as well as debugging models. I helped develop curriculum in the block-based programming language Blockly.</p>
-                                <p class="lead">As a research assistant, I helped assess and analyze assessment results from the school test sites. I also contributed to the creation and refinement of the assessments that tracked student progress throughout the school year.</p>
-
+                        <div class="col s12 text-center">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="portfolio-item">
+                                    <h1>Work Experience</h1>
+                                        <a href="http://www.physiq.com">
+                                            <img class="img-portfolio img-responsive" src="img/physiq.png">
+                                        </a>
+                                        <hr class="small">
+                                        <div class="text-left">
+                                        <p class="lead">Over this past summer (2015), I worked with the physiological startup PhysIQ as a Software Development Intern. The first project I worked on was learning how to use the Java SDK to interact with the RESTful API. The objective of this project was to clean up the existing documentation and to write a user guide from a brand new user's perspective. In the process, I was also able to help find some bugs in the API.</p>
+                                        <p class="lead">I'm currently facilitating a unit testing transition to behaviorial-driven testing, using Cucumber. There are many SDKs that interact with the API and there are over a thousand unit tests, using Cucumber allows us to consolidate feature files that are both human and machine readable.</p>
+                                    </div>
+                                    </div>
                                 </div>
+                                <div class="col s12">
+                                    <div class="portfolio-item">
+                                        <a href="http://ct-stem.northwestern.edu/">
+                                            <img class="img-portfolio img-responsive" src="img/nu.png">
+                                        </a>
+                                        <hr class="small">
+                                        <div class="text-left">
+                                        <p class="lead">Over the summer of 2014, I worked as a research and coding assistant in the Computational Thinking in STEM (CT-STEM) research group at Northwestern University. The goal of the research group was to develop curriculum that challenged high school students to develop programming and coding skills, while learning to think more computationally.</p> 
+                                        <p class="lead">As a coding assistant, I created my own model of the spread of vector-borne diseases in NetLogo, an agent-based modeling language. I also maintained existing models, tailoring them to the specific needs of certain programs as well as debugging models. I helped develop curriculum in the block-based programming language Blockly.</p>
+                                        <p class="lead">As a research assistant, I helped assess and analyze assessment results from the school test sites. I also contributed to the creation and refinement of the assessments that tracked student progress throughout the school year.</p>
 
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
+            </section>
         </div>
-        <!-- /.container -->
-    </section>
+    </main>
 
 
-    <!-- Portfolio 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) 
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-                <!-- /.col-lg-10 
-            </div>
-            <!-- /.row 
+    <footer class="page-footer">
+        <div class="col s12 right-align">
+            <div class="container">
+                <h4 class="white-text"><strong>Kevin Jin</strong></h4>
+                <p>2039 Sherman Ave, FL 2<br>Evanston, Illinois 60201</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (206) 397-9068</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kevin@kevin-jin.com">kevin@kevin-jin.com</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-4x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-github-square fa-fw fa-4x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-4x"></i></a>
+                    </li>
+                    <li>
+                        <a href="KevinJin_Resume.pdf" title="Resume"><i class="fa fa-file-text fa-fw fa-4x"></i></div></a>
+                    </li>
+                </ul>
+                <!-- <br>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Kevin Jin 2015</p> -->
+          <!--  </div>
         </div>
-        <!-- /.container 
-    </section>
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <!--
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
-                </div>
-            </div>
-        </div>
-    </aside>
-    </div>
-</main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Kevin Jin</strong>
-                    </h4>
-                    <p>2039 Sherman Ave, FL 2<br>Evanston, Illinois 60201</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (206) 397-9068</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kevin@kevin-jin.com">kevin@kevin-jin.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-4x"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-github-square fa-fw fa-4x"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-4x"></i></a>
-                        </li>
-                        <li>
-                            <a href="KevinJin_Resume.pdf" title="Resume"><i class="fa fa-file-text fa-fw fa-4x"></i></div></a>
-                        </li>
-                    </ul>
-                    <!-- <br>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Kevin Jin 2015</p> -->
-                </div>
-            </div>
-        </div>
-    </footer>
+    </footer> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -298,34 +188,34 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+    // // Closes the sidebar menu
+    // $("#menu-close").click(function(e) {
+    //     e.preventDefault();
+    //     $("#sidebar-wrapper").toggleClass("active");
+    // });
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+    // // Opens the sidebar menu
+    // $("#menu-toggle").click(function(e) {
+    //     e.preventDefault();
+    //     $("#sidebar-wrapper").toggleClass("active");
+    // });
 
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+    // // Scrolls to the selected menu item on the page
+    // $(function() {
+    //     $('a[href*=#]:not([href=#])').click(function() {
+    //         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
+    //             var target = $(this.hash);
+    //             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //             if (target.length) {
+    //                 $('html,body').animate({
+    //                     scrollTop: target.offset().top
+    //                 }, 1000);
+    //                 return false;
+    //             }
+    //         }
+    //     });
+    // });
     </script>
 
 </body>
