@@ -12,13 +12,49 @@ body {
    flex: 1;
 }
 
-footer {
+#footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #e6e6e6;
+  background-color: #1f8dd6;
+}
+.header {
+	border-bottom: 1px solid #ccc;
+}
+hr {
+	border-top: 1px solid #eee;
+}
+.footer-header {
+	font-size: 150%;
+	font-weight: 500;
+}
+.left {
+	text-align: left;
+	padding-left: 10%;
+}
+.right {
+	text-align: right;
+	padding-right: 10%;
+}
+
+img.right{
+	float:right;
+	padding:0;
+	margin:0;
+}
+span.link-header {
+	display:block;
+}
+span.link-header > h1, span.link-header > h4 {
+	display: inline;
+	text-decoration: none;
+	font-weight:300;
 }
 
 #nav-head {
-	color: orange;
-	background-color: black;
+	text-transform: none;
+}
+
+.white-text {
+	color:white;
+	text-decoration: none
 }
