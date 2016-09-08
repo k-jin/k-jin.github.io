@@ -251,17 +251,17 @@
                 <h5>Or spam.</h5>
                 <h6>Or both!</h6>
             </div>
-
-            <div class="content">
-                <form class="pure-form pure-g">
+            <div class="content" id="contact-container">
+                <form class="pure-form pure-g"  method="POST">
                     <fieldset class="pure-group pure-u-1">
-                        <input type="text" class="pure-input-1" placeholder="name">
-                        <input type="text" class="pure-input-1" placeholder="email">
-                        <input type="text" class="pure-input-1" placeholder="subject">
-                        <textarea class="pure-input-1" placeholder="stuff Kevin should see" rows=6></textarea>
+                        <input type="text" class="pure-input-1" placeholder="name" name="name">
+                        <input type="text" class="pure-input-1" placeholder="email" name="email">
+                        <input type="text" class="pure-input-1" placeholder="subject" name="subject">
+                        <textarea class="pure-input-1" placeholder="stuff Kevin should see" name="msg" rows=6></textarea>
                     </fieldset>
                     <div class="pure-u-1-4"></div>
-                    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary pure-u-1-2"><i class="fa fa-paper-plane fa-fw"></i>Send!</button>
+                    <button type="submit" class="pure-button pure-input-1-4 pure-button-primary pure-u-1-2"><i class="fa fa-paper-plane fa-fw"></i>Send</button>
+                    <button type="reset" class="button-warning pure-button pure-input-1-4 pure-u-1-2"><i class="fa fa-close fa-fw"></i>Clear</button>
                 </form>
             </div>
         </div>
@@ -305,8 +305,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="js/layout.js"></script>
-
+    <!-- <script src="js/layout.js"></script> -->
+    <script src="js/stuff.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
