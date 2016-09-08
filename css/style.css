@@ -15,7 +15,7 @@ body {
 #footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #1f8dd6;
+  background-color: #8156a7;
 }
 .header {
 	border-bottom: 1px solid #ccc;
@@ -50,11 +50,28 @@ span.link-header > h1, span.link-header > h4 {
 	font-weight:300;
 }
 
-#nav-head {
+a.pure-menu-heading#nav-head {
 	text-transform: none;
+	background-color: #8156a7;
 }
 
 .white-text {
 	color:white;
 	text-decoration: none
+}
+div.header > h3 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h4 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h5 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h6 {
+	color:#ddd;	
+	font-weight:300;
 }
