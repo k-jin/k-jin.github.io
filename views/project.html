@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kevin Jin</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="../css/grids-responsive.css">
+    <link rel="stylesheet" href="../css/layouts/side-menu.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://use.fontawesome.com/6f5dca8961.js"></script>
+</head>
+
+<body>
+<div id="layout">
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" id="nav-head">Kevin Jin</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="../index.html" id="welcome-link" class="pure-menu-link">Welcome</a></li>
+                <li class="pure-menu-item"><a href="skill.html" id="skill-link" class="pure-menu-link">Technical Skills</a></li>
+                <li class="pure-menu-item"><a href="experience.html" id="experience-link" class="pure-menu-link">Experience</a></li>
+                <li class="pure-menu-item"><a href="#" id="project-link" class="pure-menu-link active">Projects</a></li>
+                <li class="pure-menu-item"><a href="resume.html" id="resume-link" class="pure-menu-link">Résumé</a></li>
+                <li class="pure-menu-item"><a href="contact.html" id="contact-link" class="pure-menu-link">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="project-page" class="page">
+            <div class="header">
+                <h1>Projects</h1>
+                <h2>Hackathons, Class Projects, and Side Projects</h2>
+            </div>
+            <div class="content">
+                <span class="content-subhead link-header">
+                    <h1 class="content-subhead">Tally &ndash; </h1>
+                    <h4><a href="https://github.com/eecs394-s16/tally-ui-ionic"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
+                </span>
+                <hr class="small">
+                <p class="lead">
+                    Tally is a Pinterest budgeting tool that allows users to visually see and group their wishlists and see what the expected costs. We used the Ionic framework (AngularJS) to develop a progressive web app. Features included Pinterest integration, dynamic drag and drop, budget calculation, and data persistence for user accounts.
+                </p>
+                <span class="content-subhead link-header">
+                    <h1 class="content-subhead">Jukebox &ndash; </h1>
+                    <h4><a href="https://github.com/eecs394-s16/team-brown-test"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
+                </span>
+                <hr class="small">
+                <p class="lead">
+                    Jukebox is a collaborative Spotify playlist builder, allowing users to contribute to an ongoing playlist at an event and vote songs up the queue from their own phones. We used the Supersonic framework to develop a mobile web app. We included Spotify integration, playlist management, and contributing to and voting on another user's playlist.
+                </p>
+                <span class="content-subhead link-header">
+                    <h1 class="content-subhead">Clue Reasoner &ndash; </h1>
+                    <h4><a href="https://github.com/AnujIravane/Clue-Reasoner"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
+                </span>
+                <hr class="small">
+                <p class="lead">
+                    For our Knowledge Representation and Reasoning course, my team created a computer player that tracked all guesses made by each player and use this information to win the game. The computer player used a SAT solver (ZChaff) to keep track of where each card was located, whether it was in its own hand, another player's hand, or in the game's solution. Since each card could only be in one location, the computer player would add what it learned to the SAT solver, based on the guesses made by other players and who was able to refute those guesses, until it could determine the solution to the game. We used created this player using Python and the ZChaff SAT solver. 
+                </p>
+                <span class="content-subhead link-header">
+                    <h1 class="content-subhead">Hit Song Predictor &ndash; </h1>
+                    <h4><a href="http://kevin-jin.com/Top100Predictor"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
+                </span>
+                <hr class="small">
+                <p class="lead">
+                    For our Machine Learning course, my team used the Spotify and EchoNest API to gather song metadata. We then used nearest neighbor, decision tree, and Naive Bayes net classifiers to analyze which classifier was most effective in predicting whether a song would be a Top 100 song of the year as ranked by Billboards. We found that none of the classifiers worked well because the target set was so small, only one hundred songs out of the thousands of songs that are released each year. However, the decision tree and the Naive Bayes net classifiers worked better than the nearest neighbor classifier. 
+                </p>
+                <span class="content-subhead link-header">
+                    <h1 class="content-subhead">Pebble BuzzKill &ndash; </h1>
+                    
+                    <h4><a href="https://github.com/tenaciousj/BuzzKillPebbie"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
+                    <h4><a href="http://devpost.com/software/buzzkill-yaj2q"><i class="fa fa-code fa-fw fa-2x"></i></a></h4>
+                </span>
+                <hr class="small">
+                <p class="lead">
+                    At HackIllinois 2015, my team created a Pebble watch app for passive time management. It simply keeps track of how much time the user is being unproductive and vibrates as a reminder that the time may be better used elsewhere. The Pebble app works in conjunction with a Chrome extension. The Chrome extension checks whether the URL the user is visiting contains any 'unproductive' terms. If so, it updates the status on Firebase, which notifies the watch, starting a timer. At every 'x' time interval, the watch will vibrate to gently remind the user that time is passing.
+                </p>
+                <h1 class="content-subhead">Other Projects</h1>
+                <hr class="small">
+                <ul>
+                    <li><a href="http://devpost.com/software/leap-motion-beer-pong">Leap Motion Beer Pong</a> &ndash; a single player game of beer pong using the Leap Motion controller</li>
+                    <li><a href="http://devpost.com/software/simon-says">Simon Says</a> &ndash; a simple random choice generator</li>
+                </ul>
+            </div>
+        </div> 
+    <div id="footer">
+        <div class="pure-g white-text">
+            <div class="pure-u-1 pure-u-md-1-4">
+                <p class="footer-header left">Kevin Jin</p>
+                <p class="left">
+                    <i class="fa fa-file-text fa-fw"></i> <a href="KevinJin_Resume.pdf" class="white-text">Resume</a><br />
+                    <i class="fa fa-phone fa-fw"></i> (206) 397-9068 <br />
+                    <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kjin@u.northwestern.edu" class="white-text">kjin@u.northwestern.edu</a>
+                </p>
+            </div>
+            <div class="pure-u-md-1-4"></div>
+            <div class="pure-u-md-1-4"></div>
+            <div class="pure-u-1 pure-u-md-1-4">
+                <p class="footer-header right">All roads lead to Kevin</p>
+                <div class="right">
+                    <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-git-square fa-fw fa-3x white-text"></i></a>
+                    <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x white-text"></i></a>
+                    <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x white-text"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@
 #footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #8156a7;
+  background-color: #521973;
 }
 
 .header {
@@ -49,12 +49,15 @@ span.link-header > h1, span.link-header > h4 {
 
 a.pure-menu-heading#nav-head {
 	text-transform: none;
+	background-color:#521973;
+}
+.active {
 	background-color: #8156a7;
 }
 
 .white-text {
 	color:white;
-	text-decoration: none
+	text-decoration: none;
 }
 div.header > h3 {
 	color:#ddd;	
