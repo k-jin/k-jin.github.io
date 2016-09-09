@@ -162,3 +162,12 @@ span.link-header > h1, span.link-header > h4 {
 .good#send-result {
 	color: green;
 }
+
+/* thanks.html */
+#kanye {
+	margin-top: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
