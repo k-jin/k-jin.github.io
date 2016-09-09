@@ -18,7 +18,7 @@ $(document).ready(function() {
 			};
 			$.ajax({
 	            type: "POST",
-	            url: "mail.php",
+	            url: "../mail.php",
 	            data: data,
 	            success: function(){
 	            	var msg="Your email was successfully sent, Kevin will get back to you ASAP";
