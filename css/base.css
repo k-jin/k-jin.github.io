@@ -11,6 +11,9 @@ body {
 /*#layout {
  	flex: 1; 
 }*/
+#menu a{
+	padding-right:0.6em;
+}
 
 .white-text {
 	color:white;
