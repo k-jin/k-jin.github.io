@@ -44,15 +44,15 @@
             </div>
             <div class="content" id="contact-container">
                 <div id="send-result"></div>
-                <form class="pure-form pure-g">
+                <form class="pure-form pure-g" action="https://formspree.io/kjin@u.northwestern.edu" method="POST">
                     <fieldset class="pure-group pure-u-1">
-                        <input type="text" class="pure-input-1" placeholder="name" id="sender-name">
-                        <input type="text" class="pure-input-1" placeholder="email" id="sender-email">
-                        <input type="text" class="pure-input-1" placeholder="subject" id="sender-subject">
-                        <textarea class="pure-input-1" placeholder="stuff Kevin should see" id="sender-msg" rows=6></textarea>
+                        <input type="text" class="pure-input-1" placeholder="name" id="sender-name" name="name">
+                        <input type="text" class="pure-input-1" placeholder="email" id="sender-email" name="_replyto">
+                        <input type="text" class="pure-input-1" placeholder="subject" id="sender-subject" name="subject">
+                        <textarea class="pure-input-1" placeholder="stuff Kevin should see" id="sender-msg" name="message" rows=6></textarea>
                     </fieldset>
                     <div class="pure-u-1-5"></div>
-                    <a id="send-btn" class="pure-button pure-input-1-5 pure-button-primary pure-u-1-5"><i class="fa fa-paper-plane fa-fw"></i>Send</a>
+                    <button type="submit" id="send-btn" class="pure-button pure-input-1-5 pure-button-primary pure-u-1-5"><i class="fa fa-paper-plane fa-fw"></i>Send</button>
                     <div class="pure-u-1-5"></div>
                     <button type="reset" class="button-error pure-button pure-input-1-5 pure-u-1-5"><i class="fa fa-close fa-fw"></i>Clear</button>
                 </form>
@@ -86,7 +86,7 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="../js/index.js"></script>
-<script src="../js/email.js"></script>
+<!-- <script src="../js/email.js"></script> -->
 </body>
 
 </html>
