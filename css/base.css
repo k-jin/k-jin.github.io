@@ -99,6 +99,7 @@ p.footer-header.right {
 table.skill {
 	margin: 50px 0;
 	font-size: 130%;
+	width:100%;
 }
 table.skill > tbody > tr > td {
 	vertical-align: middle;
