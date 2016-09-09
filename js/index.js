@@ -103,5 +103,10 @@ $(document).ready(function() {
         toggleClass(menu, active);
         toggleClass(menuLink, active);
     };
+
+    if ($(window).width() < 768) {
+    	$('.unwrapper').unwrap();
+    	$('.row-me').wrap('<tr></tr>');
+    }
 });
 
