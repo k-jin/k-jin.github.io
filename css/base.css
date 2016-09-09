@@ -84,11 +84,12 @@ p.footer-header.right {
     #resume-object {
 		height:20%;
 	}
-}
-#footer {
+	#footer {
 	padding-left: 11.5em; /* left col width "#menu" */
 	left:0;
 }
+}
+
 @media (max-width: 48em) {
 	.right {
     	text-align:left;
