@@ -19,6 +19,7 @@ body {
 hr {
 	border-top: 1px solid #eee;
 }
+
 /* SIDE MENU */
 a.pure-menu-heading#nav-head {
 	text-transform: none;
@@ -94,6 +95,51 @@ p.footer-header.right {
     }
 }
 
+/* skill.html */
+table.skill {
+	margin: 50px 0;
+	font-size: 130%;
+}
+table.skill > tbody > tr > td {
+	vertical-align: middle;
+}
+table.skill > tbody > tr > td > i {
+	font-size:150%;
+}
+table.skill > tbody > tr > td > h1.content-subhead {
+	font-size: 120%;
+	margin: 0px;
+	padding: inherit;
+	padding-right: 0;
+	padding-left: 0;
+}
+table.skill > tbody > tr > td.table-head {
+	background-color: #521973;
+}
+table.skill > tbody > tr > td.table-head.odd {
+	background-color:rgb(220, 180, 20);
+}
+
+/* experience.html */
+table.experience {
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+img.pure-img-responsive {
+	min-width: 205px;
+}
+
+/* project.html */
+span.link-header {
+	display:block;
+}
+span.link-header > h1, span.link-header > h4 {
+	display: inline;
+	text-decoration: none;
+	font-weight:300;
+}
+
 /* resume.html */
 #layout.resume {
 	min-height:100%;
@@ -103,4 +149,16 @@ p.footer-header.right {
   height: 80%;
   width: 100%;
   position: absolute;
+}
+
+/* contact.html */
+#contact-container {
+	margin-top: 50px;
+}
+#send-result {
+	text-align: center;
+	color: red;	
+}
+.good#send-result {
+	color: green;
 }
