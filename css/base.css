@@ -126,7 +126,7 @@ table.experience {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-img.pure-img-responsive {
+img.pure-img-responsive.experience {
 	width: 205px;
 	min-width: 205px;
 }
