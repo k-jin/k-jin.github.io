@@ -81,16 +81,12 @@ p.footer-header.right {
 	padding-top: 5px;
 }
 @media (min-width: 48em) {
-    #footer {
-        padding-left: 11.5em; /* left col width "#menu" */
-        left: 0;
-    }
     #resume-object {
 		height:20%;
 	}
 }
 #footer {
-	padding-left: 11.5em;
+	padding-left: 11.5em; /* left col width "#menu" */
 	left:0;
 }
 @media (max-width: 48em) {
@@ -132,8 +128,8 @@ table.experience {
 	margin-bottom: 50px;
 }
 img.pure-img-responsive.experience {
-	width: 205px;
-	min-width: 205px;
+	width: 13em;
+	min-width: 13em;
 }
 
 /* project.html */
