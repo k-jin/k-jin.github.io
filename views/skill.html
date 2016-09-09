@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kevin Jin</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="../css/grids-responsive.css">
+    <link rel="stylesheet" href="../css/layouts/side-menu.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="https://use.fontawesome.com/6f5dca8961.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+</head>
+
+<body>
+<div id="layout">
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" id="nav-head">Kevin Jin</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="../index.html" id="welcome-link" class="pure-menu-link">Welcome</a></li>
+                <li class="pure-menu-item"><a href="#" id="skill-link" class="pure-menu-link active"><span class="white-text">Technical Skills</span></a></li>
+                <li class="pure-menu-item"><a href="experience.html" id="experience-link" class="pure-menu-link">Experience</a></li>
+                <li class="pure-menu-item"><a href="project.html" id="project-link" class="pure-menu-link">Projects</a></li>
+                <li class="pure-menu-item"><a href="resume.html" id="resume-link" class="pure-menu-link">Résumé</a></li>
+                <li class="pure-menu-item"><a href="contact.html" id="contact-link" class="pure-menu-link">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="skill-page" class="page">
+            <div class="header">
+                <h1>Technical Skills</h1>
+                <h2>Relevant Coursework</h2>
+            </div>
+
+            <div class="content">
+                <table class="pure-table pure-table-horizontal skill">
+                    <tbody>
+                        <tr>
+                            <td class="table-head"><h1 class="content-subhead white-text">Programming Languages</h1></td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="devicon-java-plain"></i> Java</td>
+                        </tr>
+                        <tr>
+                            <td><i class="devicon-python-plain"></i> Python</td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="devicon-go-plain"></i> Go</td>  
+                        </tr>
+                        <tr>
+                            <td><i class="devicon-javascript-plain"></i> Javascript, <i class="devicon-angularjs-plain"></i> AngularJS, <i class="devicon-jquery-plain"></i> JQuery</td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="devicon-php-plain"></i> PHP, <i class="devicon-codeigniter-plain"></i> CodeIgniter</td>
+                        </tr>
+                        <tr>
+                            <td><i class="devicon-cplusplus-plain"></i> C++</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="pure-table pure-table-horizontal skill">
+                    <tbody>
+                        <tr>
+                            <td class="table-head odd"><h1 class="content-subhead white-text">Relevant Skills</h1></td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="devicon-git-plain"></i> Git</td>
+                        </tr>
+                        <tr>
+                            <td><i class="devicon-linux-plain"></i> Linux, <i class="devicon-ubuntu-plain"></i> Ubuntu, <i class="devicon-redhat-plain"></i> Red Hat</td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="fa fa-bolt fa-fw"></i> Agile Development</td>  
+                        </tr>
+                        <tr>
+                            <td><i class="devicon-postgresql-plain"></i> PostgreSQL, <i class="devicon-mysql-plain"></i> MySQL</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="pure-table pure-table-horizontal skill">
+                    <tbody>
+                        <tr>
+                            <td class="table-head"><h1 class="content-subhead white-text">Relevant Coursework</h1></td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="fa fa-code fa-fw"></i> Data Structures and Algorithms</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-database fa-fw"></i> Computer Systems and Databases</td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="fa fa-code-fork fa-fw"></i> Software Development and Project Management</td>  
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-cloud-download fa-fw"></i> Networking, Network Penetration, and Distributed Systems</td>
+                        </tr>
+                        <tr class="pure-table-odd">
+                            <td><i class="fa fa-cubes fa-fw"></i> Intro to AI and Machine Learning</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hand-peace-o fa-fw"></i> Human Computer Interactions and Biometrics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div id="footer">
+    <div class="pure-g white-text">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <p class="footer-header left">Kevin Jin</p>
+            <p class="left">
+                <i class="fa fa-file-text fa-fw"></i> <a href="KevinJin_Resume.pdf" class="white-text">Résumé</a><br />
+                <i class="fa fa-phone fa-fw" id="phone-icon"></i> (206) 397-9068 <br />
+                <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kjin@u.northwestern.edu" class="white-text"><span id="copy-email">kjin@u.northwestern.edu</span></a> &ndash; <button id="copy-button" class="pure-button pure-button-primary"><i class="fa fa-clipboard fa-fw"></i>Copy to clipboard</button><br />
+                <div id="copy-msg"></div>
+            </p>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+            <p class="footer-header right">All roads lead to Kevin</p>
+            <p class="footer-body right">(well just these ones actually)</p>
+            <div class="right">
+                <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-git-square fa-fw fa-3x white-text"></i></a>
+                <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x white-text"></i></a>
+                <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x white-text"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>

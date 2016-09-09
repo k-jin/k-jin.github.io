@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TODO:
-    -sticky footer
-    -images inline with content for projects and experience
--->
 <head>
 
     <meta charset="utf-8">
@@ -13,11 +9,12 @@
     <meta name="author" content="">
 
     <title>Kevin Jin</title>
-    <link rel="icon" href="img/favicon_large.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive.css">
     <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/resume.css">
     <script src="https://use.fontawesome.com/6f5dca8961.js"></script>
 </head>
 
@@ -27,14 +24,12 @@
         <div class="pure-menu">
             <a class="pure-menu-heading" id="nav-head">Kevin Jin</a>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" id="welcome-link" class="pure-menu-link">Welcome</a></li>
-                <li class="pure-menu-item"><a href="#" id="skill-link" class="pure-menu-link">Technical Skills</a></li>
-                <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                    <a href="#" id="experience-link" class="pure-menu-link">Experience</a>
-                </li>
-                <li class="pure-menu-item"><a href="#" id="project-link" class="pure-menu-link">Projects</a></li>
-                <li class="pure-menu-item"><a href="#" id="resume-link" class="pure-menu-link">Résumé</a></li>
-                <li class="pure-menu-item"><a href="#" id="contact-link" class="pure-menu-link">Contact Me</a></li>
+                <li class="pure-menu-item"><a href="#" id="welcome-link" class="pure-menu-link active"><span class="white-text">Welcome</span></a></li>
+                <li class="pure-menu-item"><a href="views/skill.html" id="skill-link" class="pure-menu-link">Technical Skills</a></li>
+                <li class="pure-menu-item"><a href="views/experience.html" id="experience-link" class="pure-menu-link">Experience</a></li>
+                <li class="pure-menu-item"><a href="views/project.html" id="project-link" class="pure-menu-link">Projects</a></li>
+                <li class="pure-menu-item"><a href="views/resume.html" id="resume-link" class="pure-menu-link">Résumé</a></li>
+                <li class="pure-menu-item"><a href="views/contact.html" id="contact-link" class="pure-menu-link">Contact Me</a></li>
             </ul>
         </div>
     </div>
@@ -42,7 +37,7 @@
         <div id="welcome-page" class="page">
             <div class="header">
                 <h1>Welcome!</h1>
-                <h2>Thank you for visiting</h2>
+                <h2>Thanks for visiting</h2>
             </div>
 
             <div class="content">
@@ -75,217 +70,33 @@
                 </p>
             </div>
         </div>
-        <div id="resume-page" class="page">
-            <!-- <div class="pure-g"> -->
-                <!-- <div class="pure-u-1"> -->
-                    <object data="KevinJin_Resume.pdf" type="application/pdf" width="100%" height="100%">
-                       <p>This browser does not support PDFs. Please download my résumé to view it: <a href="KevinJin_Resume.pdf">Download Résumé</a>.</p>
-                    </object>
-                <!-- </div> -->
-            <!-- </div> -->
-        </div>
-        <div id="skill-page" class="page">
-            <div class="header">
-                <h1>Technical Skills</h1>
-                <h2>Relevant Coursework</h2>
-            </div>
-
-            <div class="content">
-                Programmming Languages
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Golang</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>C++</li>
-                </ul>
-                Relevant Skills
-                <ul>
-                    <li>Git</li>
-                    <li>Linux (Ubuntu, Red Hat)</li>
-                    <li>Agile Development</li>
-                    <li>SQL (Postgres/Redshift, MySQL)</li>
-                </ul>
-                Relevant Coursework
-                <ul>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Computer Systems and Databases</li>
-                    <li>Software Development and Project Management</li>
-                    <li>Networking, Network Penetration, and Distributed Systems</li>
-                    <li>Intro to AI, Knowledge Representation and Reasoning, and Machine learning</li>
-                    <li>Human Computer Interactions and Biometrics</li>
-                </ul>
-            </div>
-        </div>
-        <div id="experience-page" class="page">
-            <div class="header">
-                <h1>Experience</h1>
-                <h2>Research and Internships</h2>
-            </div>
-            <div class="content">
-                <div class="pure-g">
-                    <span class="pure-u-1 pure-u-md-3-4 content-subhead link-header">
-                        <h1 class="content-subhead">TripleLift &ndash; </h1>
-                        <h4><a href="http://triplelift.com">triplelift.com</a></h4>
-                    </span>
-                    <div class="pure-u-1 pure-u-md-1-4">
-                        <img class="pure-img-responsive right" src="img/tl.png">
-                    </div>
-                </div>
-                <hr class="small">
-                <p class="lead">
-                    I interned at the adtech startup TripleLift as a Full Stack Web Developer on the Solutions Engineering team. As a member of the Solutions Engineering, I had the opportunity to participate and interact with clients. However, my role focused more on the coding side of things than the client facing side and I had the opportunity to work on a large variety of projects during my time at TripleLift.
-                </p>
-                <p class="lead">
-                    One of the main projects I worked on involved analyzing the effectiveness of an advertisement placement. To do so, we use a tracking company's software to analyze our ad placements. I wrote an algorithm in PHP that dynamically calculated how often we should use the tracking company's software on each placement, based on the placement's historical performance. This allowed TripleLift to more efficiently analyze placement performance in a more cost-effective way. 
-                </p>
-                <p class="lead">
-                    I created and improved a few internal tools (Chrome extensions and PHP tools) that optimized processes for both the Engineering and Business Development teams. In working on these tools, I worked with AJAX requests and made my own contributions to the TripleLift API. 
-                </p>   
-                <p class="lead">
-                    I also had the opportunity to work with MySQL and Redshift (Postgres). I worked with the Salesforce API for a migration job, changing it from MySQL to Redshift  and adding new, calculated fields. Using Redshift allowed for queries that ran four times faster than equivalent ones written in MySQL. I also regularly used both databases to generate reports for Sales and Business Development teams. 
-                </p> 
-                <div class="pure-g">
-                    <span class="pure-u-1 pure-u-md-3-4 content-subhead link-header">
-                        <h1 class="content-subhead">PhysIQ &ndash; </h1>
-                        <h4><a href="http://physiq.com">physiq.com</a></h4>
-                    </span>
-                    <div class="pure-u-1 pure-u-md-1-4">
-                        <img class="pure-img-responsive right" src="img/piq.png">
-                    </div>
-                </div>
-                <hr class="small">
-                <div class="text-left">
-                    <p class="lead">I worked at the physiological startup PhysIQ as a Software Development Intern. The first project I worked on was learning how to use the Java SDK to interact with the RESTful API. The objective of this project was to clean up the existing documentation and to write a user guide from the perspective of a new user. In the process, I was also able to help find and address some bugs in the API.
-                    </p>
-                    <p class="lead">I was also in charge of learning and managing the remote mobile devices using VMware's AirWatch. We had patients across the country with our devices. I setup the remote management software and remotely troubleshooted and debugged patients' mobile devices. This process also involved communicating with AirWatch engineers to develop the features we needed. Unfortunately, AirWatch did not fit our needs and I was able to advise PhysIQ to transition to another service that did fit our needs. 
-                    </p>
-                    <div class="pure-g">
-                        <span class="pure-u-1 pure-u-md-3-4 content-subhead link-header">
-                            <h1 class="content-subhead">CT-STEM &ndash; </h1>
-                            <h4><a href="http://ct-stem.northwestern.edu">ct-stem.northwestern.edu</a></h4>
-                        </span>
-                        <div class="pure-u-1 pure-u-md-1-4">
-                            <img class="pure-img-responsive right" src="img/nu.png">
-                        </div>
-                    </div>            
-                    <hr class="small">
-                    <div class="text-left">
-                        <p class="lead">I worked as a research and coding assistant in the Computational Thinking in STEM (CT-STEM) research group at Northwestern University. The goal of the research group was to develop curriculum that challenged high school students to develop programming and coding skills, while learning to think more computationally.</p> 
-                        <p class="lead">As a coding assistant, I created my own model of the spread of vector-borne diseases in NetLogo, an agent-based modeling language. I also maintained existing models, tailoring them to the specific needs of certain programs as well as debugging models. I helped develop curriculum in the block-based programming language Blockly.</p>
-                        <p class="lead">As a research assistant, I helped assess and analyze assessment results to determine the effectiveness of various curriculum. I also contributed to the creation and refinement of these student assessments and curriculum.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="project-page" class="page">
-            <div class="header">
-                <h1>Projects</h1>
-                <h2>Hackathons, Class Projects, and Side Projects</h2>
-            </div>
-            <div class="content">
-                <span class="content-subhead link-header">
-                    <h1 class="content-subhead">Tally &ndash; </h1>
-                    <h4><a href="https://github.com/eecs394-s16/tally-ui-ionic"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
-                </span>
-                <hr class="small">
-                <p class="lead">
-                    Tally is a Pinterest budgeting tool that allows users to visually see and group their wishlists and see what the expected costs. We used the Ionic framework (AngularJS) to develop a progressive web app. Features included Pinterest integration, dynamic drag and drop, budget calculation, and data persistence for user accounts.
-                </p>
-                <span class="content-subhead link-header">
-                    <h1 class="content-subhead">Jukebox &ndash; </h1>
-                    <h4><a href="https://github.com/eecs394-s16/team-brown-test"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
-                </span>
-                <hr class="small">
-                <p class="lead">
-                    Jukebox is a collaborative Spotify playlist builder, allowing users to contribute to an ongoing playlist at an event and vote songs up the queue from their own phones. We used the Supersonic framework to develop a mobile web app. We included Spotify integration, playlist management, and contributing to and voting on another user's playlist.
-                </p>
-                <span class="content-subhead link-header">
-                    <h1 class="content-subhead">Clue Reasoner &ndash; </h1>
-                    <h4><a href="https://github.com/AnujIravane/Clue-Reasoner"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
-                </span>
-                <hr class="small">
-                <p class="lead">
-                    For our Knowledge Representation and Reasoning course, my team created a computer player that tracked all guesses made by each player and use this information to win the game. The computer player used a SAT solver (ZChaff) to keep track of where each card was located, whether it was in its own hand, another player's hand, or in the game's solution. Since each card could only be in one location, the computer player would add what it learned to the SAT solver, based on the guesses made by other players and who was able to refute those guesses, until it could determine the solution to the game. We used created this player using Python and the ZChaff SAT solver. 
-                </p>
-                <span class="content-subhead link-header">
-                    <h1 class="content-subhead">Hit Song Predictor &ndash; </h1>
-                    <h4><a href="http://kevin-jin.com/Top100Predictor"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
-                </span>
-                <hr class="small">
-                <p class="lead">
-                    For our Machine Learning course, my team used the Spotify and EchoNest API to gather song metadata. We then used nearest neighbor, decision tree, and Naive Bayes net classifiers to analyze which classifier was most effective in predicting whether a song would be a Top 100 song of the year as ranked by Billboards. We found that none of the classifiers worked well because the target set was so small, only one hundred songs out of the thousands of songs that are released each year. However, the decision tree and the Naive Bayes net classifiers worked better than the nearest neighbor classifier. 
-                </p>
-                <span class="content-subhead link-header">
-                    <h1 class="content-subhead">Pebble BuzzKill &ndash; </h1>
-                    
-                    <h4><a href="https://github.com/tenaciousj/BuzzKillPebbie"><i class="fa fa-git-square fa-fw fa-2x"></i></a></h4>
-                    <h4><a href="http://devpost.com/software/buzzkill-yaj2q"><i class="fa fa-code fa-fw fa-2x"></i></a></h4>
-                </span>
-                <hr class="small">
-                <p class="lead">
-                    At HackIllinois 2015, my team created a Pebble watch app for passive time management. It simply keeps track of how much time the user is being unproductive and vibrates as a reminder that the time may be better used elsewhere. The Pebble app works in conjunction with a Chrome extension. The Chrome extension checks whether the URL the user is visiting contains any 'unproductive' terms. If so, it updates the status on Firebase, which notifies the watch, starting a timer. At every 'x' time interval, the watch will vibrate to gently remind the user that time is passing.
-                </p>
-                <h1 class="content-subhead">Other Projects</h1>
-                <hr class="small">
-                <ul>
-                    <li><a href="http://devpost.com/software/leap-motion-beer-pong">Leap Motion Beer Pong</a> &ndash; a single player game of beer pong using the Leap Motion controller</li>
-                    <li><a href="http://devpost.com/software/simon-says">Simon Says</a> &ndash; a simple random choice generator</li>
-                </ul>
-            </div>
-        </div> 
-        <div id="contact-page" class="page">
-            <div class="header">
-                <h1>Kontact Kev</h1>
-                <h2>That's my rapper name</h2>
-                <h3>Sometimes it's Ragin Kjin</h3>
-                <h4>Send me some love.</h4>
-                <h5>Or spam.</h5>
-                <h6>Or both!</h6>
-            </div>
-            <div class="content" id="contact-container">
-                <form class="pure-form pure-g"  method="POST">
-                    <fieldset class="pure-group pure-u-1">
-                        <input type="text" class="pure-input-1" placeholder="name" name="name">
-                        <input type="text" class="pure-input-1" placeholder="email" name="email">
-                        <input type="text" class="pure-input-1" placeholder="subject" name="subject">
-                        <textarea class="pure-input-1" placeholder="stuff Kevin should see" name="msg" rows=6></textarea>
-                    </fieldset>
-                    <div class="pure-u-1-4"></div>
-                    <button type="submit" class="pure-button pure-input-1-4 pure-button-primary pure-u-1-2"><i class="fa fa-paper-plane fa-fw"></i>Send</button>
-                    <button type="reset" class="button-warning pure-button pure-input-1-4 pure-u-1-2"><i class="fa fa-close fa-fw"></i>Clear</button>
-                </form>
-            </div>
-        </div>
-    </div> 
-    <div id="footer">
-        <div class="pure-g white-text">
-            <div class="pure-u-1 pure-u-md-1-4">
-                <p class="footer-header left">Kevin Jin</p>
-                <p class="left">
-                    <i class="fa fa-file-text fa-fw"></i> <a href="KevinJin_Resume.pdf" class="white-text">Resume</a><br />
-                    <i class="fa fa-phone fa-fw"></i> (206) 397-9068 <br />
-                    <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kevin@kevin-jin.com" class="white-text">kevin@kevin-jin.com</a>
-                </p>
-            </div>
-            <div class="pure-u-md-1-4"></div>
-            <div class="pure-u-md-1-4"></div>
-            <div class="pure-u-1 pure-u-md-1-4">
-                <p class="footer-header right">All roads lead to Kevin</p>
-                <div class="right">
-                    <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-git-square fa-fw fa-3x white-text"></i></a>
-                    <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x white-text"></i></a>
-                    <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x white-text"></i></a>
-                </div>
-            </div>
-        </div>
     </div>
 
 </div>
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<div id="footer">
+    <div class="pure-g white-text">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <p class="footer-header left">Kevin Jin</p>
+            <p class="left">
+                <i class="fa fa-file-text fa-fw"></i> <a href="KevinJin_Resume.pdf" class="white-text">Résumé</a><br />
+                <i class="fa fa-phone fa-fw" id="phone-icon"></i> (206) 397-9068 <br />
+                <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kjin@u.northwestern.edu" class="white-text"><span id="copy-email">kjin@u.northwestern.edu</span></a> &ndash; <button id="copy-button" class="pure-button pure-button-primary"><i class="fa fa-clipboard fa-fw"></i>Copy to clipboard</button><br />
+                <div id="copy-msg"></div>
+            </p>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+            <p class="footer-header right">All roads lead to Kevin</p>
+            <p class="footer-body right">(well just these ones actually)</p>
+            <div class="right">
+                <a href="http://github.com/k-jin" title="GitHub"><i class="fa fa-git-square fa-fw fa-3x white-text"></i></a>
+                <a href="http://www.linkedin.com/in/kevinjin1" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-3x white-text"></i></a>
+                <a href="http://devpost.com/kjin" title="DevPost"><i class="fa fa-code fa-fw fa-3x white-text"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 

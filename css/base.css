@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    height:100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#layout {
+ 	flex: 1; 
+}
+
+.white-text {
+	color:white;
+	text-decoration: none;
+}
+hr {
+	border-top: 1px solid #eee;
+}
+
+/* SIDE MENU */
+a.pure-menu-heading#nav-head {
+	text-transform: none;
+	font-size: 115%;
+	background-color:#521973;
+}
+a.active {
+	background-color: rgb(220, 180, 20);
+}
+
+/* HEADER DIVS */
+.header {
+	border-bottom: 1px solid #ccc;
+}
+div.header > h3 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h4 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h5 {
+	color:#ddd;	
+	font-weight:300;
+}
+div.header > h6 {
+	color:#ddd;	
+	font-weight:300;
+}
+
+/* FOOTER STUFF */
+#footer {
+  margin: 0;
+  padding: 1em 2em;
+  background-color: #521973;
+}
+.footer-header {
+	font-size: 175%;
+	font-weight: 500;
+}
+.footer-body {
+	margin-top:0;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+p.footer-header.right {
+	margin-bottom:0;
+}
+#copy-button {
+	padding: 4px 8px;
+	background-color:rgb(220, 180, 20);
+}
+#phone-icon {
+	padding-top: 5px;
+}
+@media (min-width: 48em) {
+    #footer {
+        padding-left: 11.5em; /* left col width "#menu" */
+        left: 0;
+    }
+    #resume-object {
+		height:20%;
+	}
+}
+@media (max-width: 48em) {
+	.right {
+    	text-align:left;
+    }
+}
+
+/* skill.html */
+table.skill {
+	margin: 50px 0;
+	font-size: 130%;
+}
+table.skill > tbody > tr > td {
+	vertical-align: middle;
+}
+table.skill > tbody > tr > td > i {
+	font-size:150%;
+}
+table.skill > tbody > tr > td > h1.content-subhead {
+	font-size: 120%;
+	margin: 0px;
+	padding: inherit;
+	padding-right: 0;
+	padding-left: 0;
+}
+table.skill > tbody > tr > td.table-head {
+	background-color: #521973;
+}
+table.skill > tbody > tr > td.table-head.odd {
+	background-color:rgb(220, 180, 20);
+}
+
+/* experience.html */
+table.experience {
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+img.pure-img-responsive {
+	min-width: 205px;
+}
+
+/* project.html */
+span.link-header {
+	display:block;
+}
+span.link-header > h1, span.link-header > h4 {
+	display: inline;
+	text-decoration: none;
+	font-weight:300;
+}
+
+/* resume.html */
+#layout.resume {
+	min-height:100%;
+}
+#resume-object {
+  max-height:80%;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+/* contact.html */
+#contact-container {
+	margin-top: 50px;
+}
+#send-result {
+	text-align: center;
+	color: red;	
+}
+.good#send-result {
+	color: green;
+}
