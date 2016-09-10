@@ -154,10 +154,10 @@ span.link-header > h1, span.link-header > h4 {
 	min-height:100%;
 }
 #resume-object {
-  max-height:80%;
-  height: 80%;
-  width: 100%;
-  position: absolute;
+	max-height:80%;
+	height: 80%;
+	width: 90%;
+	position: absolute;
 }
 
 /* contact.html */
