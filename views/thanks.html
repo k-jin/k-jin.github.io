@@ -15,6 +15,33 @@
     <link rel="stylesheet" href="../css/layouts/side-menu.css">
     <link rel="stylesheet" href="../css/base.css">
     <script src="https://use.fontawesome.com/6f5dca8961.js"></script>
+    <!--BEGIN QUALTRICS SITE INTERCEPT-->
+<script type='text/javascript'>
+(function(){var g=function(){
+if (typeof QSI === 'undefined') {
+    QSI = {};
+    QSI.config = {
+        hostedJSLocation: 'https://testgate1-app.eng.qops.net:5005/static/si/si-hostedjs.1.0.5/js_min/',
+        interceptId: 'SI_50CNjPjAI4vctkV',
+        zoneId: 'ZN_eR03INNYPcC0J13',
+        brandId: 'qaz1',
+        editing: false, // remove or set to true if you want to test the editing revision
+        enableJSSanitization: true, // set to false if you want to disable sanitization 
+        sampleType: 'r', // set to 'v' if you would like to sample by visitors instead of page views
+        sampleRate: 100 // 0-100 Setting to 100 turns off sampling
+    };
+}
+var e=QSI.config.sampleRate === 0?0:(QSI.config.sampleRate||100);
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var h=QSI.config.sampleType||'r';var f="QSI_S_"+(QSI.config.interceptId||QSI.config.zoneId);var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=(QSI.config.hostedJSLocation + "OrchestratorMain.js");document.body&&document.body.appendChild(a)}};
+this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+try{(new g()).start()}catch(i){}})();
+</script>
+<!--END SITE INTERCEPT-->
+
+
 </head>
 
 <body>
